@@ -2,7 +2,7 @@ import java.lang.String;
 import java.lang.System;
 import java.util.ArrayList;
 
-public class Gra {
+public class PortalGra {
     public static void main (String[] args) {
         int iloscRuchow = 0;
 
