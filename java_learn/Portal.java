@@ -1,31 +1,18 @@
-import java.lang.String;
-import java.lang.System;
 import java.util.ArrayList;
 
 class Portal {
 
+    private String nazwa;
     private ArrayList<String> polaPolozenia;
-    //int iloscTrafien;
 
-    public ArrayList<String> utworzStatek(){
-        int liczbaLosowa = (int) (Math.random() * 5);
-        int liczbaLosowa2 = liczbaLosowa + 1;
-        int liczbaLosowa3 = liczbaLosowa + 2;
 
-        String polozenieStatku1 = liczbaLosowa +"";
-        String polozenieStatku2 = liczbaLosowa2 +"";
-        String polozenieStatku3 = liczbaLosowa3 +"";
-
-        ArrayList<String> polozenieStatku = new ArrayList<String>();
-        polozenieStatku.add(polozenieStatku1);
-        polozenieStatku.add(polozenieStatku2);
-        polozenieStatku.add(polozenieStatku3);
-
-        return polozenieStatku;
+    public void setPolaPolozenia(ArrayList<String> ppol)
+    {
+        polaPolozenia = ppol;
     }
 
-    public void setPolaPolozenia(ArrayList<String> ppol) {
-        polaPolozenia = ppol;
+    public void setNazwa (String nzwPortalu) {
+        nazwa = nzwPortalu;
     }
 
     public String sprawdz(String ruch) {
@@ -38,6 +25,7 @@ class Portal {
 
             if (polaPolozenia.isEmpty()) {
                 wynik = "zatopiony";
+                System.out.println("Zatopiles Portal " + nazwa);
             } else {
                 wynik = "trafiony";
             }
