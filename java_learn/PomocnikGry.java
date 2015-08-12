@@ -22,7 +22,7 @@ public class PomocnikGry {
         return daneWejsciowe.toLowerCase();
     }
 
-    public ArrayList rozmiescPortal(int wielkoscPortalu) {
+    public ArrayList<String> rozmiescPortal(int wielkoscPortalu) {
         ArrayList<String> zajetePola = new ArrayList<String>();
         String [] wspolrzedneLnc = new String [wielkoscPortalu]; // zawiera współrzędne zapisane jako 'f6'
         String pomoc = null;                                // pomocniczy łańcuch znaków
